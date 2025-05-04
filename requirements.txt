@@ -16,6 +16,5 @@ pyopenjtalk
 ffmpeg
 jamo
 cn2an
-gradio==3.50.2
 pypinyin
 jieba
