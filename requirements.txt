@@ -1,3 +1,8 @@
+stablepy==0.6.0
+torch==2.2.0
+gdown
+opencv-python
+unidecode
 Cython
 librosa
 matplotlib
