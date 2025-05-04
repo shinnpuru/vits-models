@@ -1,0 +1,17 @@
+Cython
+librosa
+matplotlib
+numpy
+phonemizer
+scipy
+tensorboard
+torch
+torchvision
+Unidecode
+pyopenjtalk --global-option="--no-build-isolation"
+ffmpeg
+jamo
+cn2an
+gradio==3.50.2
+pypinyin
+jieba
