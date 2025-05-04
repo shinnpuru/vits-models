@@ -180,7 +180,7 @@ if __name__ == '__main__':
                                 o2 = gr.Audio(label="Output Audio", elem_id=f"tts-audio-en-{name_en.replace(' ','')}")
                                 download = gr.Button("Download Audio")
                             btn.click(tts_fn, inputs=[input_text, lang,  ns, nsw, ls, symbol_input], outputs=[o1, o2], api_name=f"tts-{name_en}")
-                            download.click(None, [], [], js=download_audio_js.format(audio_id=f"en-{name_en.replace(' ', '')}"))
+                            download.click(None, [], [], _js=download_audio_js.format(audio_id=f"en-{name_en.replace(' ', '')}"))
                             lang.change(change_lang, inputs=[lang], outputs=[ns, nsw, ls])
                             symbol_input.change(
                                 to_symbol_fn,
@@ -188,7 +188,7 @@ if __name__ == '__main__':
                                 [input_text]
                             )
                             symbol_list.click(None, [symbol_list, symbol_list_json], [input_text],
-                                              js=f"""
+                                              _js=f"""
                             (i,symbols) => {{
                                 let root = document.querySelector("body > gradio-app");
                                 if (root.shadowRoot != null)
@@ -237,7 +237,7 @@ if __name__ == '__main__':
                                 o2 = gr.Audio(label="输出音频", elem_id=f"tts-audio-zh-{name_zh}")
                                 download = gr.Button("下载音频")
                             btn.click(tts_fn, inputs=[input_text, lang,  ns, nsw, ls, symbol_input], outputs=[o1, o2])
-                            download.click(None, [], [], js=download_audio_js.format(audio_id=f"zh-{name_zh}"))
+                            download.click(None, [], [], _js=download_audio_js.format(audio_id=f"zh-{name_zh}"))
                             lang.change(change_lang, inputs=[lang], outputs=[ns, nsw, ls])
                             symbol_input.change(
                                 to_symbol_fn,
@@ -245,7 +245,7 @@ if __name__ == '__main__':
                                 [input_text]
                             )
                             symbol_list.click(None, [symbol_list, symbol_list_json], [input_text],
-                                              js=f"""
+                                              _js=f"""
                             (i,symbols) => {{
                                 let root = document.querySelector("body > gradio-app");
                                 if (root.shadowRoot != null)
