@@ -1,5 +1,4 @@
-stablepy==0.6.0
-torch==2.2.0
+torch
 gdown
 opencv-python
 unidecode
@@ -13,7 +12,7 @@ tensorboard
 torch
 torchvision
 Unidecode
-pyopenjtalk --global-option="--no-build-isolation"
+pyopenjtalk
 ffmpeg
 jamo
 cn2an
