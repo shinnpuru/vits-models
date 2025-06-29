@@ -1,13 +1,34 @@
----
-title: Vits-Models
-emoji: 🏃
-colorFrom: pink
-colorTo: indigo
-sdk: gradio
-sdk_version: 3.50.2
-app_file: app.py
-pinned: false
-license: apache-2.0
----
+# 🏃 Vits-Models
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+Generate realistic-sounding speech from text via API. Derived from https://huggingface.co/spaces/zomehwh/vits-models.
+
+# Prepare
+
+```
+pip install -r requirements.txt
+```
+
+# Run
+
+```
+python app.py
+```
+
+# API
+
+```
+curl --location 'https://shinnpuru-vits-models.hf.space/api/tts-Misono%20Mika' \
+--header 'Content-Type: application/json' \
+--data '{
+    "data" : [
+        "你好",
+        "Chinese",
+        0.6,
+        0.7,
+        1.2,
+        false
+    ]
+}
+'
+```
+
