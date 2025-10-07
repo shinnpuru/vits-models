@@ -110,8 +110,8 @@ download_audio_js = """
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--device', type=str, default='cpu')
-    parser.add_argument('--api', action="store_true", default=False)
-    parser.add_argument("--share", action="store_true", default=False, help="share gradio app")
+    parser.add_argument('--api', action="store_true", default=True)
+    parser.add_argument("--share", action="store_true", default=True, help="share gradio app")
     args = parser.parse_args()
     device = torch.device(args.device)
     

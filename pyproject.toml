@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = "~=3.10"
 dependencies = [
+    "gradio==3.50.2",
     "gdown",
     "opencv-python",
     "unidecode",
