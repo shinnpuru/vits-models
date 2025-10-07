@@ -2,16 +2,10 @@
 
 Generate realistic-sounding speech from text via API. Derived from https://huggingface.co/spaces/zomehwh/vits-models.
 
-# Prepare
-
-```
-pip install -r requirements.txt
-```
-
 # Run
 
 ```
-python app.py
+uv run app.py
 ```
 
 # API

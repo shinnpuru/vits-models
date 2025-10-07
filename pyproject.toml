@@ -1,0 +1,38 @@
+[project]
+name = "vits-models"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "~=3.10"
+dependencies = [
+    "gdown",
+    "opencv-python",
+    "unidecode",
+    "Cython",
+    "librosa",
+    "matplotlib",
+    "numpy",
+    "phonemizer",
+    "scipy",
+    "tensorboard",
+    "torch",
+    "torchvision",
+    "Unidecode",
+    "pyopenjtalk",
+    "ffmpeg",
+    "jamo",
+    "cn2an",
+    "pypinyin",
+    "jieba",
+]
+
+
+[[tool.uv.index]]
+name = "pytorch-gpu-src"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-gpu-src" }
+torchvision = { index = "pytorch-gpu-src" }
+torchaudio = { index = "pytorch-gpu-src" }
